@@ -1,0 +1,33 @@
+body {
+    background-color: #193B69;
+}
+nav {
+    background-color: #9B8542;
+}
+.blueBackground
+{
+    background-color: #193B69;
+}
+.whiteText{
+    color: white;
+}
+.blackText{
+    color: black;
+}
+.rightPad10
+{
+    padding-right:10px;
+    display: block;
+}
+
+.big-checkbox {height: 30px !important;
+    width:30px !important;}
+
+.largeText{
+    font-size: 25px;
+}
+
+.cal-height
+{
+    height:100px;
+}
