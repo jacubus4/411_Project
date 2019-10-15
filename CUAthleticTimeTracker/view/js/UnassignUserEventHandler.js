@@ -86,18 +86,18 @@ function DisplayAll(){
         success: function (data) {
            var results = JSON.parse(data);
 
-    for(var i=0; i<results.length; i++) {
+    for(var i=1; i<results.length; i++) {
         var tr = document.createElement('tr');
 
         addCell(tr,    "<scope='row'><button type='button' class='btn btn-danger'>Unassign</button>");
-        addCell(tr, results[i].id);
-        addCell(tr, results[i].event_name);
-        addCell(tr, results[i].first_name);
-        addCell(tr, results[i].last_name);
-        addCell(tr, results[i].start_date);
-        addCell(tr, results[i].end_date);
-        addCell(tr, results[i].start_time);
-        addCell(tr, results[i].end_time);
+        addCell(tr, results[1].id);
+        addCell(tr, results[2].event_name);
+        addCell(tr, results[3].first_name);
+        addCell(tr, results[4].last_name);
+        addCell(tr, results[5].start_date);
+        addCell(tr, results[6].end_date);
+        addCell(tr, results[7].start_time);
+        addCell(tr, results[8].end_time);
 
 
 

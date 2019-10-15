@@ -33,18 +33,14 @@
 
         <option class="dropdown-item" value="1">Select Event</option>
         <?php
-        for($i=0; $i<$count; $i++) {
+        for($i=0; $i<1; $i++) {
             ?>
             <option class="dropdown-item" value="<?php echo $allEvents[1]['id']; ?>"><?php echo($allEvents[1]['event_name']);?></option>
 
             <?php
         }
         ?>
-
     </select>
-
-
-
 </div>
 
 
@@ -70,7 +66,8 @@
 
         </tr>
         </thead>
-        <tbody id="assignmentBody">
+        <tbody id="assignmentBody" value="<?php echo $allEvents[1]['id']; ?>"> <?php echo($allEvents[1]['event_name']); ?>
+
 
 
 

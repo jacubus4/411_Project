@@ -62,7 +62,9 @@
             </form>
         </div>
     </div>
-
+<div>
+    <h1><p id="result">Initial Text</p></h1>
+</div>
                 <footer class="my-5 pt-5 text-muted text-center text-small">
                     <p class="mb-1">© <?php echo date("Y") ?> Clarion University Athletics</p>
                 </footer>

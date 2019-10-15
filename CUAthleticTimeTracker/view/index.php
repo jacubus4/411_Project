@@ -1,6 +1,6 @@
 
 <?php
- include('header.html');
+include('header.html');
 // Initialize the session
 session_start();
 
@@ -83,7 +83,7 @@ session_start();
     </div>
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">© <?php echo date("Y") ?> Clarion University Athletics</p>
+        <p class="mb-1">© <?php echo date("Y") ?> Clarion University Althletics</p>
     </footer>
 </div>
 </body>

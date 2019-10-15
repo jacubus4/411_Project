@@ -28,11 +28,11 @@ function EditEvent() {
             //Want to ignore the header columns
             //Cell 2 is the name of the event
             eventId = table.rows[i].cells[1].innerHTML;
-            document.getElementById('eventname').value = table.rows[i].cells[2].innerHTML;
-            document.getElementById('startdate').value = table.rows[i].cells[3].innerHTML;
-            document.getElementById('enddate').value = table.rows[i].cells[4].innerHTML;
-            document.getElementById('starttime').value = table.rows[i].cells[5].innerHTML;
-            document.getElementById('endtime').value = table.rows[i].cells[6].innerHTML;
+            document.getElementById('eventname').value = table.rows[i].cells[1].innerHTML;
+            document.getElementById('startdate').value = table.rows[i].cells[2].innerHTML;
+            document.getElementById('enddate').value = table.rows[i].cells[3].innerHTML;
+            document.getElementById('starttime').value = table.rows[i].cells[4].innerHTML;
+            document.getElementById('endtime').value = table.rows[i].cells[5].innerHTML;
 
         }
     }

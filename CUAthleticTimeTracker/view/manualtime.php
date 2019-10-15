@@ -1,13 +1,7 @@
 <?php include "header.html"?>
-
-<!-- <?php include('navbar.html');?>  -->
-
 <body>
 <div class="container">
-            <!-- <div a href = "C:\xampp\htdocs\CUAthleticTimeTracker\view\navbar.html"
-            </div>
-            <div a href = "C:\xampp\htdocs\CUAthleticTimeTrack\view\manualtime.php"
-            </div> -->
+
             <div class="whiteText row p-2">
                 <h2> Enter your start and end date/time manually.</h2>
 
