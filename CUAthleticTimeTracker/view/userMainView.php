@@ -5,19 +5,25 @@
 <body>
 <div class="container">
 
+    <!--
     <?php
     $loginData=($_SESSION['loginData']);
     $currentUserData = GetCurrentUserInfo($loginData->userName);
-
-     print_r($currentUserData);
+    //Took this out for wireframe
+     //print_r($currentUserData);
      ?>
+     -->
 
-    <h3>Welcome <?php echo $currentUserData[0]['first_name']." ".$currentUserData[0]['last_name'];
-    $currentUserId = $currentUserData[0]['id']?>
-    </h3>
+    <div class="whiteText" style="text-color:white">
+        <h3>Welcome <?php echo $currentUserData[0]['first_name']." ".$currentUserData[0]['last_name'];
+        $currentUserId = $currentUserData[0]['id']?>
+        </h3>
+    </div>
+    <!--
     <div class="whiteText row p-2">
         <h2>Select a Task to Log Time</h2>
     </div>
+    -->
 </div>
 
 <div class="container">
@@ -25,12 +31,17 @@
         <h2>Your Assigned Event(s)</h2> <br>
 
     </div>
+    <!--
     <div class="whiteText row p-2">
     <h3>Click on an event to view its details.</h3>
     </div>
-    <?php
+    -->
+   <!--
+   //Took this out for wireframe
+   <?php
         $allEventsByUser = GetAllEventsByUser($currentUserId);
         $count = sizeof($allEventsByUser) ?>
+   -->
 
     <table class="bg-light table table-striped" id="selectEventTable">
         <thead>
@@ -79,7 +90,7 @@
     <div class="whiteText row p-2">
         <h2> Assign Date and Time for Staff Member to Work</h2>
     </div>
-
+    <!-- removed currently and needs to be replaced by a calendar
     <div class="whiteText form-group row p-2">
         <label class="col-md-2 col-form-label" for="startdate">Choose Start Date:</label>
         <div class="col-md-10">
@@ -109,12 +120,14 @@
     </div>
 
     <div> <button type=button class="btn btn-primary" id = "btnSubmit">Submit Assignment(s)</button></div>
-
+    -->
 </div>
+<!--
 <div>
-    <h1><p id="result">Initial Text</p></h1>
+    //Took this out fro wireframe
+    //<h1><p id="result">Initial Text</p></h1>
 </div>
-
+-->
 
 <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">© <?php echo date("Y") ?> Clarion University Athletics</p>
