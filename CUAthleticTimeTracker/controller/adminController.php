@@ -82,6 +82,7 @@ function GetAllEvents()
 function GetAllEventsBetweenDates($start_date, $end_date)
 {
     $selectedEvents = ProcessGetAllEventsBetweenDates($start_date, $end_date);
+    return $selectedEvents;
 }
 function AssignUsers()
 {
