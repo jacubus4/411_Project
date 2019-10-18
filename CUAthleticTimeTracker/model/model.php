@@ -172,12 +172,12 @@ function ProcessGetAllEventsBetweenDates($start, $end)
 {
     try {
         $conn = getDbConnection();
-        $getDatedEventsSql = " SELECT event_name, event_start_date FROM task_event WHERE event_start_date 
-          (BETWEEN '$start' AND '$end');";
+        $getDatedEventsSql = " SELECT event_name, event_start_time, event_end_time, event_start_date FROM task_event WHERE event_start_date BETWEEN '$start' AND '$end'";
         $statement = $conn->prepare($getDatedEventsSql);
         $statement->execute();
         $selectedEvents = $statement->fetchAll();
         $statement->closeCursor();
+
         return $selectedEvents;           // Assoc Array of Rows
 
     }
